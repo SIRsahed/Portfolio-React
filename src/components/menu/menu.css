@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+.menu-bg{
+    animation: ami 2s;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 999;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-animation: ami 1.5s;
+}
+@keyframes ami{
+    0%{
+        margin-left: -50px;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+.menu-bg .button{
+    align-items: center;
+    overflow: hidden;
+    margin: 10px 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: #2b2a2a;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.menu-bg .button:hover{
+    background-color: orange;
+    width: 140px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.menu-bg .button:hover .icon{
+    margin-bottom: -3px;
+}
+.menu-bg .button .icon {
+    color: #fff;
+    display: inline-block;
+    margin-left: 7px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 56px;
+}
+.button a{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #fff;
+}
+.menu_text{
+    margin-left: 7px;
+}
+.is-active{
+    background-color: orange;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: -20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.backtotop{ 
+    color: #fff;
+    background-color: orange;
+    text-align: center;
+    line-height: 62px;
+    font-size: 37px;
+    border: none;
+    z-index: 999;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
