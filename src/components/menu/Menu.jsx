@@ -27,7 +27,7 @@ const Menu = () => {
     }
     return (
         <>
-            <ScrollspyNav scrollTargetIds={["banner", "about", "skills", "work", "contact"]} activeNavClass="is-active">
+            <ScrollspyNav scrollTargetIds={["banner", "about", "service", "work", "contact"]} activeNavClass="is-active">
                 <div className="menu-bg">
                     <div className="button">
                         <div className="icon">
@@ -49,7 +49,7 @@ const Menu = () => {
                     </div>
                     <div className="button">
                         <div className="icon">
-                            <a href="#"><GrServicePlay className='icon' /></a>
+                            <a href="#service"><GrServicePlay className='icon' /></a>
                         </div>
                         <a className='menu_text' href="#">SERVICES</a>
                     </div>

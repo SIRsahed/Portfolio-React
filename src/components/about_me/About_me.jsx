@@ -99,8 +99,8 @@ const About_me = () => {
                             </Col>
                             <Col lg={6}>
                                 <div class="about-right">
-                                    <h2>2+</h2>
-                                    <h3>Years of Experience</h3>
+                                    <h2>30+</h2>
+                                    <h3>Responsive Projects Done</h3>
                                 </div>
                                 <div class="about-right">
                                     <h2>5+</h2>

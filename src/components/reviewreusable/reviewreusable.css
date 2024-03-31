@@ -1,0 +1,47 @@
+.review-item{
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    border: 1px solid orange;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    position: relative;
+}
+.review-item img{
+    margin: 0 auto;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.item-right{
+    padding-left: 30px;
+}
+.item-right h3 {
+    font-size: 13px;
+}
+.item-right h4 {
+    font-size: 11px;
+}
+.item-right h5 {
+    font-size: 15px;
+}
+.item-right p {
+    font-size: 18px;
+}
+.slick-next {
+    right: 120px;
+}
+.slick-prev {
+    left: 120px;
+}
+.slick-active{
+    color: orange !important;
+}

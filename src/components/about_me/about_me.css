@@ -179,16 +179,9 @@
 }
 .CircularProgressbar-path {
     stroke: orange;
-
   }
   .CircularProgressbar-trail {
     stroke: #444;
-  }
-  .CircularProgressbar-text {
-    fill: yellow;
-  }
-  .CircularProgressbar-background {
-    fill: red;
   }
 .ex-head h2{
     padding-top: 120px;
