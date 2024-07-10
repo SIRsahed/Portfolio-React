@@ -3,13 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./about_me.css";
 import { RiHomeOfficeLine } from "react-icons/ri";
 import { FaGraduationCap, FaPenRuler, FaBullhorn } from "react-icons/fa6";
-// import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
-import {
-    CircularProgressbar,
-    CircularProgressbarWithChildren,
-    buildStyles,
-} from "react-circular-progressbar";
-import { easeQuadInOut } from "d3-ease";
+import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 
 const About_me = () => {
     return (
@@ -47,7 +41,7 @@ const About_me = () => {
                                             <p>Freelance:</p> <span>Available</span>
                                         </li>
                                     </ul>
-                                    <a href="#">
+                                    <a href="../../assets/MD_SAHED_RAHMAN_CIT_RESUME.pdf" download="MD_SAHED_RAHMAN_CIT_RESUME.pdf">
                                         <button>
                                             Download cv <i class="fa-solid fa-cloud-arrow-down"></i>
                                         </button>
@@ -89,23 +83,23 @@ const About_me = () => {
                         <Row>
                             <Col lg={6}>
                                 <div class="about-right">
-                                    <h2>2+</h2>
+                                    <h2>1+</h2>
                                     <h3>Years of Experience</h3>
                                 </div>
                                 <div class="about-right">
-                                    <h2>50+</h2>
+                                    <h2>5+</h2>
                                     <h3>Happy Customers</h3>
                                 </div>
                             </Col>
                             <Col lg={6}>
                                 <div class="about-right">
-                                    <h2>30+</h2>
-                                    <h3>Responsive Projects Done</h3>
+                                    <h2>15+</h2>
+                                    <h3>Projects Done</h3>
                                 </div>
                                 <div class="about-right">
-                                    <h2>5+</h2>
+                                    <h2>3+</h2>
                                     <h3>
-                                        Awards <br /> Won
+                                        Awards Won
                                     </h3>
                                 </div>
                             </Col>
@@ -117,95 +111,103 @@ const About_me = () => {
                     <div class="skill-head">
                         <h2>My Skills</h2>
                     </div>
-                    <Col lg={{ span: 11, offset: 1 }}>
+                    <Col>
                         <Row>
-                            <Col lg={3}>
-                                <CircularProgressbarWithChildren value={85}>
-                                    <div className="center_text">
-                                        <strong>
-                                            85%
-                                            <br />
-                                            HTML
-                                        </strong>
+                            <Col lg={3} xs={6}>
+                                <div className="circle_mother">
+                                    <div className="circle">
+                                        <CircularProgressbarWithChildren value={85}>
+                                        </CircularProgressbarWithChildren>
                                     </div>
-                                </CircularProgressbarWithChildren>
+                                    <div className="center_text">
+                                        <h2>85%</h2>
+                                        <h2>HTML</h2>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col lg={3}>
-                                <CircularProgressbarWithChildren value={80}>
-                                    <div className="center_text">
-                                        <strong>
-                                            80%
-                                            <br />
-                                            CSS
-                                        </strong>
+                            <Col lg={3} xs={6}>
+                                <div className="circle_mother">
+                                    <div className="circle">
+                                        <CircularProgressbarWithChildren value={80}>
+                                        </CircularProgressbarWithChildren>
                                     </div>
-                                </CircularProgressbarWithChildren>
+                                    <div className="center_text">
+                                        <h2>80%</h2>
+                                        <h2>CSS</h2>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col lg={3}>
-                                <CircularProgressbarWithChildren value={65}>
-                                    <div className="center_text">
-                                        <strong>
-                                            65%
-                                            <br />
-                                            JAVASCRIPT
-                                        </strong>
+                            <Col lg={3} xs={6}>
+                                <div className="circle_mother">
+                                    <div className="circle">
+                                        <CircularProgressbarWithChildren value={65}>
+                                        </CircularProgressbarWithChildren>
                                     </div>
-                                </CircularProgressbarWithChildren>
+                                    <div className="center_text">
+                                        <h2>65%</h2>
+                                        <h2>Javascript</h2>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col lg={3}>
-                                <CircularProgressbarWithChildren value={90}>
-                                    <div className="center_text">
-                                        <strong>
-                                            90%
-                                            <br />
-                                            BOOTSTRAP
-                                        </strong>
+                            <Col lg={3} xs={6}>
+                                <div className="circle_mother">
+                                    <div className="circle">
+                                        <CircularProgressbarWithChildren value={90}>
+                                        </CircularProgressbarWithChildren>
                                     </div>
-                                </CircularProgressbarWithChildren>
+                                    <div className="center_text">
+                                        <h2>90%</h2>
+                                        <h2>Bootstrap</h2>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col lg={3}>
-                                <CircularProgressbarWithChildren value={80}>
-                                    <div className="center_text">
-                                        <strong>
-                                            80%
-                                            <br />
-                                            REACT JS
-                                        </strong>
+                            <Col lg={3} xs={6}>
+                                <div className="circle_mother">
+                                    <div className="circle">
+                                        <CircularProgressbarWithChildren value={70}>
+                                        </CircularProgressbarWithChildren>
                                     </div>
-                                </CircularProgressbarWithChildren>
+                                    <div className="center_text">
+                                        <h2>70%</h2>
+                                        <h2>React JS</h2>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col lg={3}>
-                                <CircularProgressbarWithChildren value={55}>
-                                    <div className="center_text">
-                                        <strong>
-                                            55%
-                                            <br />
-                                            TAILWIND
-                                        </strong>
+                            <Col lg={3} xs={6}>
+                                <div className="circle_mother">
+                                    <div className="circle">
+                                        <CircularProgressbarWithChildren value={90}>
+                                        </CircularProgressbarWithChildren>
                                     </div>
-                                </CircularProgressbarWithChildren>
+                                    <div className="center_text">
+                                        <h2>90</h2>
+                                        <h2>Tailwind CSS</h2>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col lg={3}>
-                                <CircularProgressbarWithChildren value={70}>
-                                    <div className="center_text">
-                                        <strong>
-                                            70%
-                                            <br />
-                                            NEXT JS
-                                        </strong>
+                            <Col lg={3} xs={6}>
+                                <div className="circle_mother">
+                                    <div className="circle">
+                                        <CircularProgressbarWithChildren value={70}>
+                                        </CircularProgressbarWithChildren>
                                     </div>
-                                </CircularProgressbarWithChildren>
+                                    <div className="center_text">
+                                        <h2>70%</h2>
+                                        <h2>NEXT JS</h2>
+                                    </div>
+                                </div>
                             </Col>
-                            <Col lg={3}>
-                                <CircularProgressbarWithChildren value={50}>
-                                    <div className="center_text">
-                                        <strong>
-                                            50%
-                                            <br />
-                                            GIT
-                                        </strong>
+                            <Col lg={3} xs={6}>
+                                <div className="circle_mother">
+                                    <div className="circle">
+                                        <CircularProgressbarWithChildren value={85}>
+                                        </CircularProgressbarWithChildren>
                                     </div>
-                                </CircularProgressbarWithChildren>
+                                    <div className="center_text">
+                                        <h2>85%</h2>
+                                        <h2>GitHub</h2>
+                                    </div>
+                                </div>
                             </Col>
                         </Row>
                     </Col>
@@ -214,7 +216,7 @@ const About_me = () => {
                     <div class="ex-head">
                         <h2>Experiences & Education</h2>
                     </div>
-                    <Col lg={{ span: 11, offset: 1 }}>
+                    <Col>
                         <Row>
                             <Col lg={6}>
                                 <div class="ex-item">
@@ -248,7 +250,7 @@ const About_me = () => {
                                 <div class="ex-item">
                                     <h4>2023 - PRESENT</h4>
                                     <h2>
-                                        Full Stack Developer<span> - Fiverr</span>
+                                        Front-End Developer<span> - Upwork</span>
                                     </h2>
                                     <p>
                                         On Fiverr: Navigating dynamic challenges, coding innovation,
@@ -275,7 +277,7 @@ const About_me = () => {
                                 <div class="ex-item">
                                     <h4>2022 - 2022</h4>
                                     <h2>
-                                        Front End DEVELOPER<span> - Fiverr</span>
+                                        Front-End DEVELOPER<span> - Fiverr</span>
                                     </h2>
                                     <p>
                                         Fiverr front-end dev: Customized web solutions for diverse

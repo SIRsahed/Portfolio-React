@@ -152,6 +152,7 @@
 }
 .skill-head{
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 .skill-head h2{
     text-align: center;
@@ -164,19 +165,30 @@
 
 
 
-.CircularProgressbar{
+.CircularProgressbar {
     width: 200px;
-    margin-top: 100px;
+}
+.circle_mother {
+    position: relative;
+    margin: 25px 0;
+}
+.circle {
+    text-align: center;
 }
 .center_text {
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-    margin-top: -47px;
-    margin-right: 38px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    font-weight: 350;
+}
+.center_text h2{
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
     opacity: 0.8;
 }
+
 .CircularProgressbar-path {
     stroke: orange;
   }
@@ -253,4 +265,88 @@
     font-family: Poppins;
     color: #fff;
     opacity: 0.6;
+}
+
+@media(max-width: 1199px){
+    #about {
+        padding-bottom: 0px;
+    }
+    .about-head h2 {
+        font-size: 68px;
+        top: 51px;
+        letter-spacing: 2px;
+    }
+    .about-head h3 {
+        padding: 52px 0 52px 0;
+        font-size: 37px;
+    }
+    .about-head h4 {
+        padding: 52px 0 52px 5px;
+        font-size: 37px;
+    }
+    .all-head h2 {
+        padding-bottom: 20px;
+    }
+    .about-left-left ul li p {
+        padding-bottom: 0px !important;
+        margin: 2px !important;
+        font-size: 14px;
+    }
+    .about-left-left ul li span {
+        font-size: 14px;
+    }
+    .about-left-left button{
+        display: none;
+    }
+    .about-left-left ul{
+        margin: 0 !important;
+    }
+    .about-left-right ul li p {
+        padding-bottom: 0px !important;
+        margin: 2px !important;
+        font-size: 14px;
+    }
+    .about-left-right ul li span {
+        font-size: 14px;
+    }
+    .skill-head {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .CircularProgressbar {
+        width: 150px;
+    }
+    .center_text h2 {
+        font-size: 14px;
+    }
+    .ex-head h2 {
+        padding-top: 50px;
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+    .ex-item {
+        margin-bottom: 40px;
+        padding-left: 20px;
+        margin-left: 10px;
+    }
+    .ex-item h4 {
+        font-size: 11px;
+        margin-bottom: 7px;
+    }
+    .ex-item h2 {
+        font-size: 14px;
+        padding-bottom: 0px;
+    }
+    .ex-item p {
+        line-height: 23px;
+        font-size: 14px;
+    }
+    .ex-item .icon {
+        height: 35px;
+        width: 35px;
+        top: -5px;
+        left: -19px;
+        font-size: 48px;
+        padding: 9px;
+    }
 }

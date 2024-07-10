@@ -1,17 +1,4 @@
-.review-item{
-    padding: 25px 30px;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    border: 1px solid orange;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    position: relative;
-}
-.review-item img{
+.item-left img{
     margin: 0 auto;
     height: 140px;
     width: 140px;
@@ -23,6 +10,7 @@
 }
 .item-right{
     padding-left: 30px;
+    color: #fff;
 }
 .item-right h3 {
     font-size: 13px;
@@ -44,4 +32,21 @@
 }
 .slick-active{
     color: orange !important;
+}
+
+@media(max-width: 1199px){
+    .item-left img {
+        margin: 0 auto 25px auto;
+        height: 110px;
+        width: 110px;
+    }
+    .item-right p {
+        font-size: 13px;
+    }
+    .item-right h3 {
+        font-size: 11px;
+    }
+    .item-right h4 {
+        font-size: 10px;
+    }
 }

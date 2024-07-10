@@ -1,22 +1,25 @@
 import React from 'react'
 import "./reviewreusable.css"
-import { Col } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 
 const Reviewreusable = (props) => {
     return (
         <>
             <Col lg={{ span: 8, offset: 2 }}>
-                <div className="review-item">
-                    <div className="item-left">
-                        <img src={props.img} alt="" />
-                    </div>
-                    <div className="item-right">
-                        <p>{props.comment}</p>
-                        <h3>{props.name}</h3>
-                        <h4>{props.designation}</h4>
-                        <h5>{props.company}</h5>
-                    </div>
-                </div>
+                <Row>
+                    <Col lg={3}>
+                        <div className="item-left">
+                            <img src={props.img} alt="" />
+                        </div>
+                    </Col>
+                    <Col lg={9}>
+                        <div className="item-right">
+                            <p>{props.comment}</p>
+                            <h3>{props.name}</h3>
+                            <h4>{props.designation}</h4>
+                        </div>
+                    </Col>
+                </Row>
             </Col>
         </>
     )

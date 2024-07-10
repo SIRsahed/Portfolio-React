@@ -41,3 +41,34 @@
     margin: 0;
     font-family: Poppins;
 }
+
+@media(max-width: 1199px){
+    .service-head h2 {
+        font-size: 68px;
+        letter-spacing: 2px;
+        left: 50%;
+        top: 50px;
+    }
+    .service-head h3 {
+        padding: 50px 0 50px 0;
+        font-size: 35px;
+    }
+    .service-head h4 {
+        padding: 50px 0 50px 0;
+        font-size: 35px;
+    }
+    .service-item{
+        margin-bottom: 20px;
+    }
+    .service-item h2 {
+        padding: 15px 0 9px 0;
+        font-size: 20px;
+    }
+    .service-item p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #service {
+        padding-bottom: 50px;
+    }
+}

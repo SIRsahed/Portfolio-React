@@ -43,3 +43,26 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.project img{
+    height: 300px;
+    width: 100%;
+}
+
+
+@media(max-width: 1199px){
+    .project a {
+        font-size: 14px;
+    }
+    .project{
+        margin-bottom: 30px;
+    }
+    .project h3 {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    .project p {
+        font-size: 14px;
+        padding-bottom: 8px;
+        line-height: 23px;
+    }
+}

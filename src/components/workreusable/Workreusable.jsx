@@ -10,8 +10,8 @@ const Workreusable = (props) => {
                     <img src={props.image} alt="" className='w-100' />
                     <h3>{props.title}</h3>
                     <p>{props.content}</p>
-                    <a href="https://github.com/SIRsahed/Finsweet-10Pages" target='blank'>{props.github}</a>
-                    <a href="https://sirsahed.github.io/Finsweet-10Pages/" target='blank'>{props.livesite}</a>
+                    <a href={props.github} target='blank'>GitHub</a>
+                    <a href={props.livesite} target='blank'>Live Site</a>
                 </div>
             </Col>
         </>

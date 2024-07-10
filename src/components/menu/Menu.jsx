@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import "./menu.css"
-import { ImHome } from "react-icons/im";
-import { FaBriefcase } from "react-icons/fa";
-import { FaIdCard, FaPencil } from "react-icons/fa6";
-import { IoMailOpenOutline } from "react-icons/io5";
-import { GrServicePlay } from "react-icons/gr";
+import { Container, Navbar, Nav } from 'react-bootstrap'
+import { IoIosHome, IoIosContact } from "react-icons/io";
+import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { LiaToolboxSolid } from "react-icons/lia";
+import { MdOutlineSettings } from "react-icons/md";
+import { TbMailOpenedFilled } from "react-icons/tb";
 import { RxCaretUp } from "react-icons/rx";
-import ScrollspyNav from 'react-scrollspy-nav';
+import ScrollspyNav from "react-scrollspy-nav"
+
+
 
 const Menu = () => {
 
@@ -25,55 +28,63 @@ const Menu = () => {
     const handleToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" })
     }
+
     return (
         <>
-            <ScrollspyNav scrollTargetIds={["banner", "about", "service", "work", "contact"]} activeNavClass="is-active">
-                <div className="menu-bg">
-                    <div className="button">
-                        <div className="icon">
-                            <a href="#banner"><ImHome className='icon' /></a>
-                        </div>
-                        <a className='menu_text' href="#banner">HOME</a>
-                    </div>
-                    <div className="button">
-                        <div className="icon">
-                            <a href="#about"><FaIdCard className='icon' /></a>
-                        </div>
-                        <a className='menu_text' href="#about">ABOUT</a>
-                    </div>
-                    <div className="button">
-                        <div className="icon">
-                            <a href="#work"><FaBriefcase className='icon' /></a>
-                        </div>
-                        <a className='menu_text' href="#work">WORKS</a>
-                    </div>
-                    <div className="button">
-                        <div className="icon">
-                            <a href="#service"><GrServicePlay className='icon' /></a>
-                        </div>
-                        <a className='menu_text' href="#">SERVICES</a>
-                    </div>
-                    <div className="button">
-                        <div className="icon">
-                            <a href="#contact"><IoMailOpenOutline className='icon' /></a>
-                        </div>
-                        <a className='menu_text' href="#contact">CONTACT</a>
-                    </div>
-                    <div className="button">
-                        <div className="icon">
-                            <a href="#"><FaPencil className='icon' /></a>
-                        </div>
-                        <a className='menu_text' href="#">BLOG</a>
-                    </div>
-                </div>
-            </ScrollspyNav>
+            <Navbar expand="xl" className="menu_bg">
+                <Container>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className='nav_main-1'>
+                            <ul className='nav_main_one'>
+                                <li> <a href="#banner" > <i><IoIosHome /></i> <span>Home</span></a> </li>
+                                <li> <a href="#about" > <i><IoIosContact /></i> <span>About</span></a> </li>
+                                <li> <a href="#work" > <i><LiaToolboxSolid /></i> <span>Portfolio</span></a> </li>
+                                <li> <a href="#service" > <i><MdOutlineSettings /></i> <span>Service</span></a> </li>
+                                <li> <a href="#contact" > <i><TbMailOpenedFilled /></i> <span>Contact</span></a> </li>
+                            </ul>
 
+                            <div class="social">
+                                <a href="https://www.facebook.com/sahed.rahman.bdarmy.21" target='blank'><FaFacebook className='icons' /></a>
+                                <a href="#"><FaTwitter className='icons' /></a>
+                                <a href="https://github.com/SIRsahed" target='blank'><FaGithub className='icons' /></a>
+                                <a href="https://www.linkedin.com/in/md-sahed-rahman-961862297/" target='blank'><FaLinkedin className='icons' /></a>
+                            </div>
+                            <div className="cv">
+                                <a href=''>
+                                    <button>
+                                        Download Resume <i class="fa-solid fa-cloud-arrow-down"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </Nav>
 
-
+                        <div>
+                            <ScrollspyNav
+                                scrollTargetIds={["home", "about", "protfolio", "contact"]}
+                                offset={100}
+                                activeNavClass="is-active"
+                                scrollDuration="1000"
+                                headerBackground="true"
+                            >
+                                <ul className='nav_main'>
+                                    <li> <a href="#banner" className='nav-link'> <i><IoIosHome /></i> <span>Home</span></a> </li>
+                                    <li> <a href="#about" className='nav-link'> <i><IoIosContact /></i> <span>About</span></a> </li>
+                                    <li> <a href="#work" className='nav-link'> <i><LiaToolboxSolid /></i> <span>Portfolio</span></a> </li>
+                                    <li> <a href="#service" className='nav-link'> <i><MdOutlineSettings /></i> <span>Service</span></a> </li>
+                                    <li> <a href="#contact" className='nav-link'> <i><TbMailOpenedFilled /></i> <span>Contact</span></a> </li>
+                                </ul>
+                            </ScrollspyNav>
+                        </div>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
             {isVisible && <div>
                 <button className="backtotop" onClick={handleToTop}><RxCaretUp className='icon2' /></button>
             </div>}
         </>
+
+
     )
 }
 
