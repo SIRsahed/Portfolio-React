@@ -95,7 +95,7 @@ const Work = () => {
             </div>
             <Slider {...settings}>
               <Reviewreusable img={RazibSir} name="Razibur Rahman" designation="Sr Faculty, Creative IT Institute" company="Creative IT Institute" comment="He completed the course with great skill and dedication. I personally recommend him for perfect work." />
-              <Reviewreusable img={RazibSir} name="Bean Sandi" designation="Sr Faculty, Creative IT Institute" comment="He completed the course with great skill and dedication. I personally recommend him for perfect work." />
+              <Reviewreusable img={RazibSir} name="Razibur Rahman" designation="Sr Faculty, Creative IT Institute" comment="He completed the course with great skill and dedication. I personally recommend him for perfect work." />
             </Slider>
           </div>
         </Row>
