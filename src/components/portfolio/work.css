@@ -44,6 +44,7 @@
 .list11{
     justify-content: center;
     padding-bottom: 10px !important;
+    gap: 10px;
 }
 .nav-link{
     color: #fff !important;
