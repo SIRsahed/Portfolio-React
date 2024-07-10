@@ -4,6 +4,7 @@ import "./about_me.css";
 import { RiHomeOfficeLine } from "react-icons/ri";
 import { FaGraduationCap, FaPenRuler, FaBullhorn } from "react-icons/fa6";
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import CV from "../../assets/MD_SAHED_RAHMAN_CIT_RESUME.pdf"
 
 const About_me = () => {
     return (
@@ -41,7 +42,7 @@ const About_me = () => {
                                             <p>Freelance:</p> <span>Available</span>
                                         </li>
                                     </ul>
-                                    <a href="../../assets/MD_SAHED_RAHMAN_CIT_RESUME.pdf" download="MD_SAHED_RAHMAN_CIT_RESUME.pdf">
+                                    <a href={CV} download>
                                         <button>
                                             Download cv <i class="fa-solid fa-cloud-arrow-down"></i>
                                         </button>
