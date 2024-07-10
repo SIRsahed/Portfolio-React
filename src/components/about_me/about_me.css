@@ -110,9 +110,9 @@
 }
 .about-right h3 {
     text-transform: uppercase;
-    padding: 15px 0 0 45px;
+    padding: 25px 0 0 23px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 27px;
     color: #fff;
     position: relative;
@@ -120,10 +120,10 @@
 .about-right h3::after{
     content: "";
     position: absolute;
-    top: 40%;
-    left: -10px;
+    top: 72%;
+    left: -12px;
     height: 2px;
-    width: 40px;
+    width: 30px;
     background-color: #fff;
     opacity: 0.6;
 }
