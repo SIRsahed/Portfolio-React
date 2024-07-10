@@ -164,24 +164,24 @@ const About_me = () => {
                             <Col lg={3} xs={6}>
                                 <div className="circle_mother">
                                     <div className="circle">
-                                        <CircularProgressbarWithChildren value={70}>
+                                        <CircularProgressbarWithChildren value={90}>
                                         </CircularProgressbarWithChildren>
                                     </div>
                                     <div className="center_text">
-                                        <h2>70%</h2>
-                                        <h2>React JS</h2>
+                                        <h2>90%</h2>
+                                        <h2>Tailwind CSS</h2>
                                     </div>
                                 </div>
                             </Col>
                             <Col lg={3} xs={6}>
                                 <div className="circle_mother">
                                     <div className="circle">
-                                        <CircularProgressbarWithChildren value={90}>
+                                        <CircularProgressbarWithChildren value={70}>
                                         </CircularProgressbarWithChildren>
                                     </div>
                                     <div className="center_text">
-                                        <h2>90</h2>
-                                        <h2>Tailwind CSS</h2>
+                                        <h2>70%</h2>
+                                        <h2>React JS</h2>
                                     </div>
                                 </div>
                             </Col>
